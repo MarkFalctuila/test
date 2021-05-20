@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?php echo site_url('assets/fonts/fontawesome/all.min.css');?> ">
     <link rel="stylesheet" href="<?php echo site_url('assets/fonts/Roboto/stylesheet.css');?> ">
     <link rel="stylesheet" href="<?php echo site_url('assets/css/sweetalert/sweetalert2.css'); ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets/css/bootstrap-select.min.css'); ?>">
 </head>
 <body>
 

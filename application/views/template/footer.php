@@ -30,6 +30,7 @@
 <script src="<?php echo site_url('assets/js/jquery.min.js'); ?>"></script>
 <script src="<?php echo site_url('assets/js/bootstrap.bundle.min.js'); ?>"></script>
 <script src="<?php echo site_url('assets/js/sweetalert/sweetalert2.min.js'); ?>"></script>
+<script src="<?php echo site_url('assets/js/bootstrap-select.min.js'); ?>"></script>
 
 
 <script>
@@ -46,6 +47,11 @@
 <script src="<?php echo site_url('assets/js/scripts/login/login.js'); ?>"></script>
 <?php elseif(current_url() == site_url("dashboard")): ?>
 <script src="<?php echo site_url('assets/js/scripts/dashboard/dashboard.js'); ?>"></script>
+<script src="<?php echo site_url('assets/js/chartjs/chart.min.js'); ?>"></script>
+<script src="<?php echo site_url('assets/js/chartjs/chart.annotation.js'); ?>"></script>
+<script src="<?php echo site_url('assets/js/chartjs/chart.datalabels.min.js'); ?>"></script>
+
+
 <?php elseif(current_url() == site_url("registration")): ?>
 <script src="<?php echo site_url('assets/js/scripts/registration/registration.js'); ?>"></script>
 <?php endif; ?>

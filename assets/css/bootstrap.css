@@ -10399,3 +10399,22 @@ a.text-dark:hover, a.text-dark:focus {
 .selected{
   background-color: forestgreen;
 }
+.user-list {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+::webkit-scrollbar{
+  width: 20px;
+  height: 10px;
+  background-color: #000;
+  scrollbar-color:#fff;
+  scrollbar-width:thin;
+
+}
+::webkit-scrollbar {
+  margin:0;
+  padding: 0;
+  border-radius: 0;
+  background:gray;
+}

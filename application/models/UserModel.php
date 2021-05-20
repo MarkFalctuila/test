@@ -20,7 +20,37 @@ class UserModel extends CI_Model {
     }
     #endregion
 
+    public function getRoles()
+    {
+        return $this->db->query("Select id,name FROM roles;")->result();
+    }
+
+
+    #region
+    public function insert($data)
+    {
+        $this->db->insert("roles", $data);
+        return $this->db->affected_rows();
+    }
+    #endregion
+
+    #region
+    public function addUser($data){
+        $this->db->insert("users", $data);
+        return $this->db->affected_rows();
+    }
+    #endregion   
+
+    //#region
+        public function loadUsers(){
+            $query = $this->db->query("Call loadUsers_sp();");
+            $res = $query->result();
+
+            // $query ->next_result();
+            // $query ->free_result();
+
+            return $res;
+        }
+
+    //#endregion
 }
-
-
-
